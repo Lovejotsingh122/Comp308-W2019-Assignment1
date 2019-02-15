@@ -1,46 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%= title %></title>
-<!--CSS SECTION-->
-<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="Content/app.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">ePortfolio-Lovejot Singh</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<% include ./partials/header.ejs %>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/"><i class="fa fa-lg fa-home"></i> Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">  
-              <a class="nav-link" href="/about"><i class="fa fa-lg fa-info"></i> About</a>
-            </li>
-             <li class="nav-item active"> 
-                <a class="nav-link" href="/services"><i class="fa fa-lg fa-briefcase"></i> Products</a>
-              </li>
-              <li class="nav-item active"> 
-                <a class="nav-link" href="/projects"><i class="fa fa-lg fa-birthday-cake"></i> Services</a>
-              </li>
-               <li class="nav-item active"> 
-                <a class="nav-link" href="/contact"><i class="fa fa-lg fa-phone"></i> Contact</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
 
       <div class="container">
         <div class="jumbotron">
-          <h1 class="display-4">Welcome to <%=title%></h1>
             <h1 class="display-4">Mission Statement</h1>
             <p class="lead">Software Engineer with excellent programming,database skills and effective communication abilities that will be utilized in IT Environment. Experienced in web designing using WordPress to providing excellent service within a work team.</p>
             <hr class="my-4">
@@ -51,10 +13,4 @@
           </div>
       </div>
 
-  <!--jAVASCRIPT-->
-  <script src="jquery/dist/jquery.min.js">
-  </script>
-  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="scripts/app.js"></script>
-</body>
-</html>
+  <% include ./partials/footer.ejs %>
