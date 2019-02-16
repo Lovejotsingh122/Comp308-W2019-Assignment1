@@ -1,3 +1,50 @@
 <% include ./partials/header.ejs %>
 <!---contact content---->
+<div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4"> &nbsp; Contact</h1>
+     <div class="media">
+  <ul class="list-group" >
+  <li class="list-group-item"><i class="fa fa-user"></i> Lovejot Singh</li>
+  <li class="list-group-item"><i class="fa fa-lg fa-phone"></i> +1 4168446728</li>
+  <li class="list-group-item"><i class="fa fa-envelope"></i> lovejotsangha122@gmail.com</li>
+  <li class="list-group-item"><i class="fa fa-address-card"></i> 83 Lord Roberts DR 
+  <br> Scarborough,ON,M1K3W5</li>
+  <li class="list-group-item"><i class="fa fa-link"></i><a href="https://github.com/Lovejotsingh122/"> github.com/lovejotsingh122</a></li>
+</ul>
+  <div class="media-body">
+   <form action="" class="form" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control" id="FirstNameTextField" placeholder="Please Enter First Name"
+              name="firstName" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="LastNameTextField" placeholder="Please Enter Last Name" name="lastName"
+              required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="ContactTextField" placeholder="Please Enter Contact Number"
+              name="contact" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="EmailTextField" placeholder="Please Enter Email ID" name="email"
+              required>
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" id="TextArea" placeholder="Please Enter your Message here" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success">
+            <i class="fa fa-check-square"></i> Submit</button>
+
+         <button type="reset" class="btn btn-danger" value="reset" >
+            <i class="fa fa-times-circle"></i> Reset</button>
+        </form>
+      </div>
+  </div>
+</div>       
 <% include ./partials/footer.ejs %>
